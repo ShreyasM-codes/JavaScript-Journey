@@ -1,0 +1,28 @@
+<html>
+    <head><title>javascript</title></head>
+    <body>
+        
+         
+        <p id="para">My name is : </p>
+        <p><button id="press">complete it!</button></p>
+        <script type="text/javascript">
+          document.getElementById('press').onclick=function(){
+            document.getElementById('para').innerHTML=document.getElementById('para').innerHTML +" Shreyas"
+          }
+
+        </script>
+
+      
+
+        <p id="name">Shreyas</p>
+        <button id="style">change</button>
+        <script type="text/javascript">
+            document.getElementById('style').onclick=function(){
+                document.getElementById('name').style.color='orange';
+                document.getElementById('name').style.fontSize='50px';
+                document.getElementById('name').style.display='none';  
+            }
+        </script>
+        
+    </body>
+</html>
