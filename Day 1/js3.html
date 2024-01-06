@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>magical word</title>
+</head>
+<body>
+    <p >Enter magical word</p>
+    <p ><input type="text" id="text">
+    <button id="checkit">check!</button></p>
+    <script type="text/javascript">
+        document.getElementById('checkit').onclick=function() {
+            var magicWord='abracadabra';
+            inputGiven=document.getElementById('text').value;
+            if(magicWord==inputGiven){
+                alert("you got it!")
+            }else{
+                alert('nope! you are wrong')
+            }
+        }
+    </script>
+    
+</body>
+</html>
