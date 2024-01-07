@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>guess game</title>
+</head>
+<body>
+    <p>how many fingers am i holding up?</p>
+    <!--
+        <p><input type="text" id='fingers'>
+    -->
+    <p> 
+        <select id="fingers">
+            <option >0</option>
+            <option >1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+            
+        </select>
+        <button id="press">check!</button>
+    </p>
+    <script type="text/javascript">
+        document.getElementById('press').onclick=function() {
+        var noOfGuesses=1;
+        var Guess=false;
+        
+            
+        while(Guess==false){
+            var secretNo=Math.floor(Math.random()*6);
+            if(document.getElementById('fingers').value==secretNo){
+                Guess=true;
+                alert("hurray! I guessed it in " + noOfGuesses +" guesses.");
+                
+            }else{
+                
+                noOfGuesses++;
+            }
+        }
+    }
+          
+        
+    </script>
+</body>
+</html>

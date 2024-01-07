@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>counter</title>
+    <script>
+        let counter=0;
+        function count(){
+            counter++;
+            alert(counter);
+        }
+        function change(){
+            document.querySelector('h1').innerHTML='GoodBye!';
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <button onclick="change()">Change me!</button>
+    <h1>counter:</h1>
+    <button onclick="count()">Count</button>
+</body>
+</html>
