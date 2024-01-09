@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>API</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            fetch('https://goweather.herokuapp.com/weather/mysore')
+            .then(response =>response.json())
+            .then(data => {
+                console.log(data);
+            })
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
